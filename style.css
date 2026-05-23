@@ -6,9 +6,9 @@ body:not(#header){
     background-image: url(source/Safaback.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 #header{
     background-color: #00A859;
@@ -18,6 +18,9 @@ body:not(#header){
     height: 8vh;
     overflow: hidden;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 #header img{
     margin-left: 25px;
@@ -60,12 +63,8 @@ body:not(#header){
     animation-timing-function: ease-in;
     font-weight: bold;
 }
-@keyframes upd{
-    0% {color: rgb(240, 240, 240);}
-    25% {color: rgb(200, 200, 200);}
-    50% {color: rgb(100, 100, 100);}
-    75% {color: rgb(50, 50, 50);}
-    100% {color: rgb(0, 0, 0);}
+#active{
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 #login{
     margin-right: 20px;
@@ -85,38 +84,14 @@ body:not(#header){
 #login:hover{
     box-shadow: 1px 3px 6px;
     transform: translateY(3px);
+    background-color: white;
+    color: black;
 }
-/* --- MOBILE RESPONSIVENESS --- */
-@media (max-width: 768px) {
-    #header ul{
-        display: none;
-    }
-    #header h1{
-        display: inline-block;
-        color: white;
-        position:relative;
-        padding: 0px;
-        margin: 0px;
-        font-size: 2.5em;
-    }
-    #header h1 sub{
-        font-size: 14px;
-    }
-}
-@media (max-width:530px) {
-    #header h1{
-        display: none;
-    }
-    #header img{
-        margin-left: 70px;
-        transform: scale(1.7);
-        margin-top: 5px;
-    }
-}
-#main{
+.main{
     background: transparent;
     backdrop-filter: blur(4px);
     margin: 30px;
+    margin-bottom: 0px;
     border-radius: 10px;
     padding: 30px;
     color: hsl(0, 0%, 98%);
@@ -125,11 +100,11 @@ body:not(#header){
     display: wrap;
     flex-wrap: wrap;
 }
-#main h1::first-letter{
+#ufi::first-letter{
     font-size: 1.5em;
-    color: white;
+    color: rgb(255, 255, 255);
 }
-#main p{
+.main p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -160,4 +135,344 @@ body:not(#header){
 }
 #relo a:nth-child(1n):hover{
     transform: translateY(3px);
+}
+
+
+#whats{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+#whats h1{
+    color: black;
+    animation: upd;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+#whats h1::first-letter{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#our{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+#whats h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#our h2{
+    color: rgb(255, 255, 255);
+    animation: upd;
+    animation-duration: 2s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+    font-size: 40px;
+}
+#our h2::first-letter{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#our h4{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+#join h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(source/Safaback.jpg);
+    background-position: center;
+    border-radius: 50px;
+    text-shadow: 3px 6px 5px;
+}
+#join h3{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+#join p{
+    font-weight: bold;
+    font-size: 1.2;
+    font-family:inherit;
+}
+#whats img{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    animation: opac;
+    animation-duration: 2s;
+    float: right;
+    margin-left: 7px;
+}
+#our img{
+    width: 300px;
+    height: 200px; 
+    border-radius: 30px;   
+    float: left;
+    margin-right: 10px;
+    animation: opacb;
+    animation-duration: 3s;
+}
+@keyframes upd{
+    0% {color: rgb(240, 240, 240);}
+    25% {color: rgb(200, 200, 200);}
+    50% {color: rgb(100, 100, 100);}
+    75% {color: rgb(50, 50, 50);}
+    100% {color: rgb(0, 0, 0);}
+}
+@keyframes opac{
+    from{opacity: 0;}
+    from{ transform: translate(20px,20px);}
+}
+@keyframes opacb{
+    from{opacity: 0;}
+    from{ transform: translate(-20px,-20px);}
+}
+@keyframes foor {
+    to{ transform: translatey(-10px);} 
+}
+@keyframes seop {
+    form{ font-size: x-small;}
+    
+}
+.app{
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 13px;
+}
+.app h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+}
+.app a{
+    font-size: 5em;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    border-radius: 50px;
+    padding: 2px;
+    margin-top: 10px;
+}
+#app a:nth-child(1){
+    color: hsl(137, 53%, 60%);
+}
+#app a:nth-child(2){
+    color: #18B7FA;
+}
+#app a:nth-child(1):hover{
+    color: hsl(137, 53%, 40%);
+    transform: translateY(5px);
+}
+#app a:nth-child(2):hover{
+    color: hsl(198, 96%, 40%);
+    transform: translateY(5px);
+}
+#footersec{
+    margin: 0px;
+    margin-top: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    box-shadow: 0px -20px 20px black;
+}
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.foot div:nth-child(n+1){
+    padding: 10px;
+    text-align: center;
+}
+.foot h1{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: foor 1s infinite;
+    animation-direction: alternate;
+    font-weight: bold;
+    color: hsl(43, 74%, 60%)
+}
+.foot li{
+    list-style: none;
+    margin: 10px;
+    margin-right: 50px;
+}
+.foot a{
+    color: white;
+}
+
+#socialm{
+    font-size: 1.5em;
+    text-align: center;
+    animation: opac 4s;  
+}
+#socialm h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+#socialm a{
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+.boomback{
+    background-color: white;
+    padding: auto;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px rgb(151, 141, 141);
+}
+#socialm a:nth-child(1){
+    color: red;
+}
+#socialm a:nth-child(2){
+    color: black;
+}
+#socialm a:nth-child(3){
+    color: #F9009A;
+}
+#socialm a:nth-child(4){
+    color: hsl(240, 100%, 40%);
+}
+#socialm a:nth-child(5){
+    color: black;
+}
+#socialm a:nth-child(6){
+    color: blue;
+}
+#socialm a:nth-child(n+1):hover{
+    font-size: 2.5em;
+    box-shadow: 4px 5px 5px;
+    border: 2px solid;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+
+/* at last page connected the about page when it go to that page  */
+html{
+    scroll-behavior: smooth;
+}
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    #header ul{
+        display: none;
+    }
+    #header h1{
+        display: inline-block;
+        color: white;
+        position:relative;
+        padding: 0px;
+        margin: 0px;
+        font-size: 2.5em;
+    }
+    #header h1 sub{
+        font-size: 14px;
+    }
+    #whats{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #our{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #boomback{
+        display: block;
+        border-radius: 0px;
+        background-color: yellow;
+    }
+}
+@media (max-width:530px) {
+    #header h1{
+        display: none;
+    }
+    #header img{
+        transform: scale(1.7);
+        margin-top: 5px;
+    }
+}
+
+
+/* service page */
+
+.semm img{
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.semm{
+    display: flow-root;
+    background: transparent;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25px;
+    color: wheat;
+    border: 1px solid;
+}
+.semm h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.semm h2{
+    font-size: 30px;
+}
+.semm p{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+#sesec{
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+.seconvert{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+}
+.secall{
+    margin: 10px;
+    padding: 25px;
+    background-color: rgba(8, 241, 0, 0.445);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(0, 255, 157);
+    transition: 1s;
+}
+.secall h1{
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    transition: 2s;
+}
+.secall input{
+    border: none;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    transform: translate(50%);
 }
