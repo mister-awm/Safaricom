@@ -36,21 +36,21 @@
                 <div class="seconvert" id="secofo">
                     <div class="secall">
                         <h1>Rate of Data</h1>
-                        <input type="number" min="0" value="0" class="secin">
-                        <h1>2 MB</h1>
-                        <button class="secch" >Check</button>
+                        <input type="number" min="0" value="0" class="secin" id="indata">
+                        <h1 id="valdata"></h1>
+                        <button class="secch" onclick="data()" >Check</button>
                     </div>
                     <div class="secall">
                         <h1>Rate of Voice</h1>
-                        <input type="number" min="0" value="0" class="secin">
-                        <h1>2 Min</h1>
-                        <button class="secch" >Check</button>
+                        <input type="number" min="0" value="0" class="secin" id="invoice">
+                        <h1 id="valvoice"></h1>
+                        <button class="secch" onclick="voice()">Check</button>
                     </div>
                     <div class="secall">
                         <h1>Rate of SMS</h1>
-                        <input type="number" min="0" value="0" class="secin">
-                        <h1>2 SMS</h1>
-                        <button class="secch">Check</button>
+                        <input type="number" min="0" value="0" class="secin" id="insms">
+                        <h1 id="valsms"></h1>
+                        <button class="secch" onclick="sms()">Check</button>
                     </div>
                 </div><hr>
 
@@ -206,6 +206,7 @@
             </div>
             
         </section>
+        
         <script src="java.js"></script>
         <script src="https://kit.fontawesome.com/635cb7e7eb.js" crossorigin="anonymous"></script>
     </body>
