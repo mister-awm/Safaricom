@@ -14,11 +14,11 @@ body:not(#header){
     background-color: #00A859;
     display: flex;
     flex-wrap: wrap;
-    width: auto;
+    width: 100%;
     height: 8vh;
     overflow: hidden;
     justify-content: space-between;
-    position: relative;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -800,11 +800,62 @@ html{
     padding-bottom: 20px;
     width: 100%;
 }
-.probuy h1,p{
-    text-align: center;
-    margin: 20px;
-    animation: opacb 3.5s;
-}
 .probuy ol{
     animation: opac 4.5s;
+}
+
+/* about page */
+
+.abcon{
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 30px;
+}
+.abcon img:nth-child(1){
+    width: auto;
+    height: 400px;
+    background-color: wheat;
+    border-radius: 40px;
+    box-shadow: 0 0 30px;
+    transition: 5s;
+    animation: opac 3s;
+}
+.abcon div:nth-child(n+1){
+    margin: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 0 40px;
+}
+.abh1{
+    margin: 10px;
+    border-bottom: 4px solid rgba(55, 0, 255, 0.836);
+    padding-bottom: 7px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: wheat;
+}
+.abh2{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    text-decoration: underline wheat;
+}
+.abp{
+    font-size: 0.8em;
+    margin: 10px;
+    font-family:cursive;
+}
+.aboutb{
+    background-color: black;
+    margin: 0px;
 }
