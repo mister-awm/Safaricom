@@ -42,6 +42,7 @@ body:not(#header){
     padding: 0px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 }
 #header ul a{
@@ -93,6 +94,9 @@ body:not(#header){
     transform: translateY(3px);
     background-color: white;
     color: black;
+}
+.phonemenu{
+    display: none;
 }
 .main{
     background: transparent;
@@ -379,20 +383,85 @@ html{
     scroll-behavior: smooth;
 }
 /* --- MOBILE RESPONSIVENESS --- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #header ul{
         display: none;
     }
     #header h1{
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         color: white;
         position:relative;
         padding: 0px;
         margin: 0px;
         font-size: 2.5em;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 30%;
     }
     #header h1 sub{
         font-size: 14px;
+    }
+    #header img{
+    display: none;
+    }
+    .phonemenu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        float: left;
+        position: fixed;
+    }
+    .phonemenu .button{
+        font-size: 3.3em;
+        cursor: pointer;
+        margin: 5px;
+        margin-left: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 0px;
+        width: fit-content;
+        display: block;
+        box-shadow: 0 0 10px blue;
+        background-color: white;
+    }
+    .phonemenulist{
+        display: none;
+        border: 2px solid black;
+        box-shadow: 0 0 30px;
+        margin-top:0px ;
+        padding:0px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .phonemenulist a{
+        color: white;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2em;
+        margin: 0px;
+        display: block;
+        padding: 40px;
+        background:transparent;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+    #gghh:checked ~ .phonemenulist{
+        display: block;
+    }
+    .phonemenu:hover .phonemenulist{
+        display: block;
+    }
+    .phonemenu .button:hover{
+        color: green;
+        font-size: 3.1em;
+    }
+    .phonemenulist a:hover{
+        color: rgb(47, 0, 255);
+        transform: scale(1.2);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 10px ;
     }
     #whats{
         display: flex;
@@ -858,4 +927,46 @@ html{
 .aboutb{
     background-color: black;
     margin: 0px;
+}
+#aboutdeveloper{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+    padding: 20px;
+    border:1px solid wheat ;
+    background-color: rgba(218, 165, 32, 0.404);
+    box-shadow: 0 0 10px;
+    position:sticky;
+}
+#aboutdeveloper h6{
+    font-size: 1.1em;
+}
+#aboutdeveloper h6 b{
+    color: gold;
+    text-decoration: underline;
+    font-family: cursive;
+    font-size: 1.2em;
+    margin: 2px;
+    text-shadow: 0 0 8px blue;
+}
+#aboutdeveloper a:nth-child(1){
+    color:hsl(198, 96%, 40%);
+    border: 1px solid #18B7FA;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+#aboutdeveloper a:nth-child(1):hover{
+    font-size: 1.6em;
+    box-shadow: 0 0 10px;
+    color: hsl(198, 96%, 60%);
+    padding-left: 20px;
+    padding-right: 20px;
+
 }

@@ -117,3 +117,14 @@ body #vv img{
     background: transparent;
     backdrop-filter: blur(100px);
 }
+#deflog h1{
+    text-decoration: none;
+    text-shadow: none;
+}
+#deflog{
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
