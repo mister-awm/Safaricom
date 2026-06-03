@@ -384,6 +384,9 @@ html{
 }
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 900px) {
+    #header{
+        height: fit-content;
+    }
     #header ul{
         display: none;
     }
@@ -406,6 +409,13 @@ html{
     #header img{
     display: none;
     }
+    #login{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        margin-left: 70%;
+    }
+
     .phonemenu{
         display: flex;
         flex-direction: column;
