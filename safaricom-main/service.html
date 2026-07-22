@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Safaricom Ethiopia</title>
+        <link rel="icon" href="source/safafav.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="sesec">
+            <div id="header">
+                <div class="phonemenu">
+                    <label for="gghh" class="button"><i class="fa-solid fa-bars"></i></label>
+                    <input type="checkbox" id="gghh" name="gghh" style="display: none;">
+                    <div class="phonemenulist">
+                        <a href="index.html">Home</a>
+                        <a href="service.html">Service</a>
+                        <a href="product.html">Product</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <img src="source/safalogo.png" alt="">
+                <h1>4G Data Bundles</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="service.html" id="active" >Service</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="login.html" id="login">Log in</a>
+            </div>
+            <div class="semain">
+                <div class="semm">
+                    <div>
+                        <img src="source/a3.jpg" alt="Safaricom Ethiopia">
+                        <h1>The Network That Empowers Ethiopia</h1>
+                        <h2> Unbeatable 4G speeds, crystal-clear voice, and seamless connectivity.</h2>
+                        <p>Whether you are a student streaming lectures in Addis Ababa, a farmer checking
+                             market prices, or a business scaling globally, Safaricom Ethiopia provides the
+                              digital infrastructure you need to succeed. Discover our flexible, high-speed
+                               packages designed to fit your exact lifestyle.</p>
+                    </div>
+                </div>
+
+                <div class="seconvert" id="secofo">
+                    <div class="secall">
+                        <h1>Rate of Data</h1>
+                        <input type="number" min="0" value="0" class="secin" id="indata">
+                        <h1 id="valdata"></h1>
+                        <button class="secch" onclick="data()" >Check</button>
+                    </div>
+                    <div class="secall">
+                        <h1>Rate of Voice</h1>
+                        <input type="number" min="0" value="0" class="secin" id="invoice">
+                        <h1 id="valvoice"></h1>
+                        <button class="secch" onclick="voice()">Check</button>
+                    </div>
+                    <div class="secall">
+                        <h1>Rate of SMS</h1>
+                        <input type="number" min="0" value="0" class="secin" id="insms">
+                        <h1 id="valsms"></h1>
+                        <button class="secch" onclick="sms()">Check</button>
+                    </div>
+                </div><hr>
+
+
+                <div class="secpac" id="serafo">
+                    <h1 id="seh1paof">Pakcage List</h1>
+                    <div class="seday">
+                        <h1 class="seh1pac">Daily package offer</h1>
+                        <div class="seday2">
+                            <div class="dayin">
+                                <h1>Internet package</h1>
+                                <h3> 5 Birr ⇒ 100Mb</h3>
+                                <h3>15 Birr ⇒ 250Mb</h3>
+                                <h3>30 Birr ⇒ 600Mb</h3>
+                                <h3>55 birr ⇒ 1.5GB</h3>
+                            </div>
+                            <div class="dayvo">
+                                <h1>Voice Package</h1>
+                                <h3>5 Birr ⇒ 24Min</h3>
+                                <h3>10 Birr ⇒ 50Min</h3>
+                                <h3>15 Birr ⇒ 90Min</h3>
+                                <h3>30 Birr ⇒ 200Min</h3>
+                            </div>
+                            <div class="daysm">
+                                <h1>SMS Package</h1>
+                                <h3>4 Birr ⇒ 40SMS</h3>
+                                <h3>6 Birr ⇒ 60SMS</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="sewe">
+                        <h1 class="seh1pac">Weekly Package offer</h1>
+                        <div class="sewe2">
+                            <div class="wein">
+                                <h1>Internet Package</h1>
+                                <h3>50 Birr ⇒ 650Mb</h3>
+                                <h3>85 Birr 1.1GB</h3>
+                                <h3>250 Birr ⇒ 2.5GB</h3>
+                            </div>
+                            <div class="wevo">
+                                <h1>Voice Package</h1>
+                                <h3>15 Birr ⇒ 60Min</h3>
+                                <h3>25 Birr ⇒ 120Min</h3>
+                                <h3>50 Birr ⇒ 300Min</h3>
+                            </div>
+                            <div class="wesm">
+                                <h1>SMS Package</h1>
+                                <h3>12 Birr ⇒ 150SMS</h3>
+                                <h3>18 Birr ⇒ 250SMS</h3>
+                                <h3>30 Birr ⇒ 400SMS</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="semon">
+                        <h1 class="seh1pac">Monthly Package offer</h1>
+                        <div class="semon2">
+                            <div class="monin">
+                                <h1>Internet Package</h1>
+                                <h3>85 Birr ⇒ 1GB</h3>
+                                <h3>150 Birr ⇒ 2GB</h3>
+                                <h3>350 Birr ⇒ 5GB</h3>
+                            </div>
+                            <div class="monvo">
+                                <h1>Voice Package</h1>
+                                <h3>50 Birr ⇒ 200Min</h3>
+                                <h3>75 Birr ⇒ 350Min</h3>
+                                <h3>100 Birr ⇒ 500Min</h3>
+                            </div>
+                            <div class="monsm">
+                                <h1>SMS Package</h1>
+                                <h3>40 Birr ⇒ 600SMS</h3>
+                                <h3>65 Birr ⇒ 1000SMS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seinfo">
+                <div>
+                    <div class="seinfo2">
+                        <h1>Tailored Connectivity for Every Lifestyle</h1>
+                        <img src="source/a4.png" alt="phone user">
+                        <p>We understand that every digital journey is unique.
+                            That is why our data, voice, and SMS packages are
+                            engineered for ultimate flexibility and absolute 
+                            control. Whether you need a quick daily boost to 
+                            coordinate your day, a heavy-duty weekly bundle to 
+                            run your digital business, or an unlimited monthly 
+                            pass for seamless entertainment, our network adapts 
+                            to your exact needs. With transparent pricing, real-time
+                            tracking, and zero hidden fees, you hold the full power 
+                            of Ethiopia's fastest digital network right in your hands.
+                        </p>
+                    </div>
+                    <div class="seinfo3">
+                        <div><h1>dail <b>*777#</b></h1></div>
+                        <div><h2>Buy on <b>Mpesa</b> <a href="https://play.google.com/store/apps/details?id=et.safaricom.mpesa.lifestyle&hl=en-US" target="_blank"><i class="fa-brands fa-google-play"></i></a></h2></div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+
+        <section id="footersec">
+            <div class="foot">
+                <div>
+                    <h1>About</h1>
+                    <ul>
+                        <li><a href="index.html">What's New</a></li>
+                        <li><a href="index.html">Our purpose</a></li>
+                        <li><a href="index.html">Join Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Service</h1>
+                    <ul>
+                        <li><a href="#secofo">Package Rate</a></li>
+                        <li><a href="#serafo">Package List</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact</h1>
+                    <ul>
+                        <li>phone: 700</li>
+                        <li>Email: <a href="mailto:customercare@safaricom.et">customercare@safaricom.et</a></li>
+                        <li>location: Addis Ababa, Ethiopia</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>More</h1>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Data privacy Statement</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <hr>
+            <div id="socialm">
+                <h1>join</h1>
+                <div class="boomback">
+                    <a href="https://www.youtube.com/@SafaricomET"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@safaricomet"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/safaricomet"><i class="fa-brands fa-square-instagram"></i></i></a>
+                    <a href="https://web.facebook.com/SafaricomET?_rdc=1&_rdr#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/SafaricomET"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/safaricom-ethiopia/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div id="aboutdeveloper">
+                    <h6>Made by <b>Mister</b> </h6>
+                    <p>Date - may/24/2026</p>
+                    <p><a href="mailto:awma6200@gmail.com">contact Dev</a></p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <script src="java.js"></script>
+        <script src="https://kit.fontawesome.com/635cb7e7eb.js" crossorigin="anonymous"></script>
+    </body>
+</html>

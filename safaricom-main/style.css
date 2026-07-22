@@ -1,0 +1,1007 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body:not(#header){
+    background-image: url(source/Safaback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+#header{
+    background-color: #00A859;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#header img{
+    margin-left: 25px;
+    display:flex;
+    height: 10vh;
+    position: relative;
+    top: -10px; 
+    background-color: white;
+    border-radius: 70px;
+    transform: scale(1.8);
+}
+#header h1{
+    display: none;
+}
+#header ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+#header ul a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.9em;
+    position:static;
+    bottom: -15px;
+    margin-top: 2px;
+
+}
+#header ul a:hover{
+    color: hsl(0, 0%, 30%);
+    font-size: 2em;
+    transform: translate(-10,14);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    animation: upd;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    font-weight: bold;
+}
+#active{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 15px;
+    padding: 4px;
+    margin: auto;
+    box-shadow: 0 0 20px greenyellow;
+}
+#login{
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 1.5em;
+    height: fit-content;
+    position: sticky;
+    box-shadow: 3px 5px 6px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #00A859;
+    background-color: hsl(0, 0%, 80%);
+    margin-top: 5px;
+    text-decoration: none;
+    padding: 5px 1px;
+}
+#login:hover{
+    box-shadow: 1px 3px 6px;
+    transform: translateY(3px);
+    background-color: white;
+    color: black;
+}
+.phonemenu{
+    display: none;
+}
+.main{
+    background: transparent;
+    backdrop-filter: blur(4px);
+    margin: 30px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    padding: 30px;
+    color: hsl(0, 0%, 98%);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ufi::first-letter{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.main p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#relo{
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+}
+#relo a{
+    text-decoration: none;
+    color: #00A859;
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+#relo a:nth-child(2n){
+    color: white;
+    background-color: #00A859;
+}
+#relo a:nth-child(2n):hover{
+    background-color: white;
+    color: #00A859;
+    transform: translateY(3px);
+}
+#relo a:nth-child(1n):hover{
+    transform: translateY(3px);
+}
+
+
+#whats{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flow-root;
+}
+#whats h1{
+    color: black;
+    animation: upd;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    font-size: 3em;
+}
+#whats h1::first-letter{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#our{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+#whats h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#our h2{
+    color: rgb(255, 255, 255);
+    animation: upd;
+    animation-duration: 2s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+    font-size: 40px;
+}
+#our h2::first-letter{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#our h4{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+#join{
+    display: flow-root;
+}
+#join h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(source/Safaback.jpg);
+    background-position: center;
+    border-radius: 50px;
+    text-shadow: 3px 6px 5px;
+}
+#join h3{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+#join p{
+    font-weight: bold;
+    font-size: 1.2;
+    font-family:inherit;
+}
+#whats img{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    animation: opac;
+    animation-duration: 2s;
+    float: right;
+    margin-left: 7px;
+}
+#our img{
+    width: 300px;
+    height: 200px; 
+    border-radius: 30px;   
+    float: left;
+    margin-right: 10px;
+    animation: opacb;
+    animation-duration: 3s;
+}
+@keyframes upd{
+    0% {color: rgb(240, 240, 240);}
+    25% {color: rgb(200, 200, 200);}
+    50% {color: rgb(100, 100, 100);}
+    75% {color: rgb(50, 50, 50);}
+    100% {color: rgb(0, 0, 0);}
+}
+@keyframes opac{
+    from{opacity: 0;}
+    from{ transform: translate(20px,20px);}
+}
+@keyframes opacb{
+    from{opacity: 0;}
+    from{ transform: translate(-20px,-20px);}
+}
+@keyframes foor {
+    to{ transform: translatey(-10px);} 
+}
+@keyframes smop{
+    0%{ opacity: 0; transform: scale(0.1);}
+    75%{transform: scale(1.1);}
+}
+
+.app{
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 13px;
+}
+.app h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+}
+.app a{
+    font-size: 5em;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    border-radius: 50px;
+    padding: 2px;
+    margin-top: 10px;
+}
+#app a:nth-child(1){
+    color: hsl(137, 53%, 60%);
+}
+#app a:nth-child(2){
+    color: #18B7FA;
+}
+#app a:nth-child(1):hover{
+    color: hsl(137, 53%, 40%);
+    transform: translateY(5px);
+}
+#app a:nth-child(2):hover{
+    color: hsl(198, 96%, 40%);
+    transform: translateY(5px);
+}
+#footersec{
+    margin: 0px;
+    margin-top: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    box-shadow: 0px -20px 20px black;
+}
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.foot div:nth-child(n+1){
+    padding: 10px;
+    text-align: center;
+}
+.foot h1{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: foor 1s infinite;
+    animation-direction: alternate;
+    font-weight: bold;
+    color: hsl(43, 74%, 60%)
+}
+.foot li{
+    list-style: none;
+    margin: 10px;
+    margin-right: 50px;
+}
+.foot a{
+    color: white;
+}
+
+#socialm{
+    font-size: 1.5em;
+    text-align: center;
+    animation: opac 4s;  
+}
+#socialm h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+#socialm a{
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+.boomback{
+    background-color: white;
+    padding: auto;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px rgb(151, 141, 141);
+}
+#socialm a:nth-child(1){
+    color: red;
+}
+#socialm a:nth-child(2){
+    color: black;
+}
+#socialm a:nth-child(3){
+    color: #F9009A;
+}
+#socialm a:nth-child(4){
+    color: hsl(240, 100%, 40%);
+}
+#socialm a:nth-child(5){
+    color: black;
+}
+#socialm a:nth-child(6){
+    color: blue;
+}
+#socialm a:nth-child(n+1):hover{
+    font-size: 2.5em;
+    box-shadow: 4px 5px 5px;
+    border: 2px solid;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+
+/* at last page connected the about page when it go to that page  */
+html{
+    scroll-behavior: smooth;
+}
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    #header{
+        height: fit-content;
+    }
+    #header ul{
+        display: none;
+    }
+    #header h1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        position:relative;
+        padding: 0px;
+        margin: 0px;
+        font-size: 2.5em;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 30%;
+    }
+    #header h1 sub{
+        font-size: 14px;
+    }
+    #header img{
+    display: none;
+    }
+    #login{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        margin-left: 70%;
+    }
+
+    .phonemenu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        float: left;
+        position: fixed;
+    }
+    .phonemenu .button{
+        font-size: 3.3em;
+        cursor: pointer;
+        margin: 5px;
+        margin-left: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 0px;
+        width: fit-content;
+        display: block;
+        box-shadow: 0 0 10px blue;
+        background-color: white;
+    }
+    .phonemenulist{
+        display: none;
+        border: 2px solid black;
+        box-shadow: 0 0 30px;
+        margin-top:0px ;
+        padding:0px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .phonemenulist a{
+        color: white;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2em;
+        margin: 0px;
+        display: block;
+        padding: 40px;
+        background:transparent;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+    #gghh:checked ~ .phonemenulist{
+        display: block;
+    }
+    .phonemenu:hover .phonemenulist{
+        display: block;
+    }
+    .phonemenu .button:hover{
+        color: green;
+        font-size: 3.1em;
+    }
+    .phonemenulist a:hover{
+        color: rgb(47, 0, 255);
+        transform: scale(1.2);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 10px ;
+    }
+    #whats{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #our{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #boomback{
+        display: block;
+        border-radius: 0px;
+        background-color: yellow;
+    }
+    #header a{
+        margin-right: 0;
+        display: flex;
+        border-radius: 10px;
+        font-size: 1.5em;
+        height: fit-content;
+        position: sticky;
+        box-shadow: 3px 5px 6px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #00A859;
+        background-color: hsl(0, 0%, 80%);
+        margin-top: 0;
+        text-decoration: none;
+        padding: 5px;
+        justify-content: end;
+        width: 100vh;
+    }
+
+}
+@media (max-width:530px) {
+    #header h1{
+        display: none;
+    }
+    #header img{
+        transform: scale(1.7);
+        margin-top: 5px;
+    }
+    .prointro img{
+        display: none;
+    }
+    
+}
+
+
+/* service page */
+
+.semm img{
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px;
+    animation: smop 1.5s;
+    animation-direction: alternate;
+}
+.semm{
+    display: flow-root;
+    background: transparent;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25px;
+    color: white;
+    border: 1px solid;
+}
+.semm h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+}
+.semm h2{
+    font-size: 30px;
+}
+.semm p{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+#sesec{
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+.seconvert{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+}
+.secall{
+    margin: 10px;
+    padding: 25px;
+    background-color: rgba(8, 241, 0, 0.445);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(0, 255, 157);
+    transition: 1s;
+    text-align: center;
+}
+.secall h1{
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    transition: 2s;
+}
+.secall input{
+    border: none;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+}
+.secch{
+    padding: 5px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.secch:hover{
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 245, 245);
+    background-color: black;
+
+}
+.secpac{
+    color: white;
+    border: 2px solid grey;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: auto;
+    margin: 40px;
+    background-color: rgba(80, 83, 80, 0.623);
+    border-radius: 40px;
+    box-shadow:  0 0 50px aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.seh1pac{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: underline rgba(6, 248, 79, 0.664);
+    text-transform: capitalize;
+}
+.seday{
+    border: 2px solid white;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.seday2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+    justify-content: center;
+}
+.seday2 div{
+    margin: 10px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 0 0 20px blue;
+}
+#seh1paof{
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 7px 10px blue;
+}
+.seday2 h1{
+    font-size: 2.3em;
+    margin-bottom: 5px;
+    border-bottom: 4px solid black;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 10px blue;
+}
+.sewe{
+    border: 2px solid white;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.sewe2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+    justify-content: center;
+}
+.sewe2 div{
+    margin: 10px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 0 0 20px blue;
+}
+.sewe2 h1{
+    font-size: 2.3em;
+    margin-bottom: 5px;
+    border-bottom: 4px solid black;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 10px blue;
+}
+.semon{
+    border: 2px solid white;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.semon2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+    justify-content: center;
+}
+.semon2 div{
+    margin: 10px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 0 0 20px blue;
+}
+.semon2 h1{
+    font-size: 2.3em;
+    margin-bottom: 5px;
+    border-bottom: 4px solid black;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 10px blue;
+}
+
+.seinfo{
+    border: none;
+    display: flow-root;
+    overflow: hidden;
+    height: auto;
+    background-color: rgba(49, 117, 77, 0.863);
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(0, 255, 13);
+    color: white;
+}
+.seinfo2 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    margin: 20px;
+    float: left;
+    animation: opacb 2s;
+    margin-top: 0px;
+}
+.seinfo2 h1{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.seinfo2 p{
+    font-size: 2em;
+}
+.seinfo3 {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid grey;
+    background-color: rgba(128, 128, 128, 0.767);
+    justify-content: space-evenly;
+}
+.seinfo3 div:nth-child(2){
+    font-size: 1.3em;
+}
+.seinfo3 div:nth-child(1){
+    align-self: center;
+}
+.seinfo3 a{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(15, 235, 44);
+    font-size: 2em;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+.seinfo3 a:hover{
+    color: green;
+  font-size: 2.2em;
+}
+
+/* product page */
+
+.prointro{
+    margin: 10px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flow-root;
+    padding: 30px;
+    box-shadow: 0 0 20px greenyellow;
+    animation: opacb 0.5s;
+}
+.prointro img{
+    width: 500px;
+    height: 350px;
+    float: left;
+    border-radius: 25px;
+    margin-right: 10px;
+    animation: opacb 2s;
+}
+.prointro h1{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: smop 2s;
+}
+.prointro p{
+    font-size: 2em;
+    color: white;
+    animation: opac 2s;
+}
+.proli{
+    font-family: 'Times New Roman', Times, serif;
+}
+.phone{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: wheat;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.phone div:nth-child(n+1){
+    width: auto;
+    padding: 40px;
+    font-size: 2em;
+    animation: smop 3s;
+}
+.wifi{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 15px;
+    justify-content: space-around;
+    text-align: center;
+}
+.wifi div:nth-child(n+1){
+    width: auto;
+    padding: 40px;
+    font-size: 2em;
+    animation: opac 4s;
+}
+#tt1{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+}
+#tt2{
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+}
+#tt3{
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+}
+#tt4{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+}
+
+.probuy{
+    background-color: rgb(124, 131, 122);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7em;
+    box-shadow: 0 0 20px black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.probuy ol{
+    animation: opac 4.5s;
+}
+
+/* about page */
+
+.abcon{
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 30px;
+}
+.abcon img:nth-child(1){
+    width: auto;
+    height: 400px;
+    background-color: wheat;
+    border-radius: 40px;
+    box-shadow: 0 0 30px;
+    transition: 5s;
+    animation: opac 3s;
+}
+.abcon div:nth-child(n+1){
+    margin: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 0 40px;
+}
+.abh1{
+    margin: 10px;
+    border-bottom: 4px solid rgba(55, 0, 255, 0.836);
+    padding-bottom: 7px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: wheat;
+}
+.abh2{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    text-decoration: underline wheat;
+}
+.abp{
+    font-size: 0.8em;
+    margin: 10px;
+    font-family:cursive;
+}
+.aboutb{
+    background-color: black;
+    margin: 0px;
+}
+#aboutdeveloper{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+    padding: 20px;
+    border:1px solid wheat ;
+    background-color: rgba(218, 165, 32, 0.404);
+    box-shadow: 0 0 10px;
+    position:sticky;
+}
+#aboutdeveloper h6{
+    font-size: 1.1em;
+}
+#aboutdeveloper h6 b{
+    color: gold;
+    text-decoration: underline;
+    font-family: cursive;
+    font-size: 1.2em;
+    margin: 2px;
+    text-shadow: 0 0 8px blue;
+}
+#aboutdeveloper a:nth-child(1){
+    color:hsl(198, 96%, 40%);
+    border: 1px solid #18B7FA;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+#aboutdeveloper a:nth-child(1):hover{
+    font-size: 1.6em;
+    box-shadow: 0 0 10px;
+    color: hsl(198, 96%, 60%);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
