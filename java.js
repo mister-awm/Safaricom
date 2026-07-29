@@ -25,7 +25,7 @@ function jain() {
         sessionStorage.setItem("acc", user);
         window.location.href = "account.html";
     }
-    else if(userIn == "user" && passIn == 1234){
+    else if(userIn == "user" || userIn == "User" && passIn == 1234){
         sessionStorage.setItem("acc", user);
         window.location.href = "account.html"
     }
@@ -43,7 +43,6 @@ let activeUser = sessionStorage.getItem("acc");
 if (activeUser !== null){
     accName.textContent = activeUser;
 }
-
 
 function data(){
     let input = Number(document.getElementById("indata").value);

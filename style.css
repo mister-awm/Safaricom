@@ -108,7 +108,7 @@ body:not(#header){
     color: hsl(0, 0%, 98%);
     font-family:Georgia, 'Times New Roman', Times, serif;
     border: 2px solid white;
-    display: wrap;
+    display: flex;
     flex-wrap: wrap;
 }
 #ufi::first-letter{
@@ -120,6 +120,7 @@ body:not(#header){
     margin-bottom: 10px;
 }
 #relo{
+    width: 100vh;
     display: flex;
     justify-content: space-evenly;
     margin: 0px;
@@ -152,6 +153,7 @@ body:not(#header){
 #whats{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    display: flow-root;
 }
 #whats h1{
     color: black;
@@ -169,6 +171,8 @@ body:not(#header){
 #our{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
 }
 #whats h3{
     font-weight: bold;
@@ -190,6 +194,9 @@ body:not(#header){
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.2em;
+}
+#join{
+    display: flow-root;
 }
 #join h1{
     font-size: 50px;
@@ -486,6 +493,24 @@ html{
         border-radius: 0px;
         background-color: yellow;
     }
+    #header a{
+        margin-right: 0;
+        display: flex;
+        border-radius: 10px;
+        font-size: 1.5em;
+        height: fit-content;
+        position: sticky;
+        box-shadow: 3px 5px 6px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #00A859;
+        background-color: hsl(0, 0%, 80%);
+        margin-top: 0;
+        text-decoration: none;
+        padding: 5px;
+        justify-content: end;
+        width: 100vh;
+    }
+
 }
 @media (max-width:530px) {
     #header h1{
